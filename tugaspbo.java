@@ -117,14 +117,14 @@ public class tugaspbo {
 // overloading constructor
  class Segitiga {
     
-    // Variabel
+    
     private double alas;
     private double tinggi;
     private double sisi1;
     private double sisi2;
     private double sisi3;
     
-    // Constructor tanpa parameter
+
     public Segitiga() {
         this.alas = 0;
         this.tinggi = 0;
@@ -133,7 +133,7 @@ public class tugaspbo {
         this.sisi3 = 0;
     }
     
-    // Constructor dengan parameter alas dan tinggi
+    
     public Segitiga(double alas, double tinggi) {
         this.alas = alas;
         this.tinggi = tinggi;
@@ -142,7 +142,7 @@ public class tugaspbo {
         this.sisi3 = 0;
     }
     
-    // Constructor dengan parameter sisi1, sisi2, dan sisi3
+    
     public Segitiga(double sisi1, double sisi2, double sisi3) {
         this.alas = 0;
         this.tinggi = 0;
@@ -151,17 +151,17 @@ public class tugaspbo {
         this.sisi3 = sisi3;
     }
     
-    // Method untuk menghitung luas segitiga
+    
     public double hitungLuas() {
         return 0.5 * this.alas * this.tinggi;
     }
     
-    // Method untuk menghitung keliling segitiga
+
     public double hitungKeliling() {
         return this.sisi1 + this.sisi2 + this.sisi3;
     }
     
-    // Method untuk mencetak hasil perhitungan
+    
     public void print() {
         if (this.alas != 0 && this.tinggi != 0) {
             System.out.println("Luas segitiga: " + hitungLuas());
@@ -172,11 +172,11 @@ public class tugaspbo {
     }
     
     public static void main(String[] args) {
-        // Membuat objek segitiga1 dengan parameter alas dan tinggi
+        
         Segitiga segitiga1 = new Segitiga(10, 5);
         segitiga1.print();
         
-        // Membuat objek segitiga2 dengan parameter sisi1, sisi2, dan sisi3
+        
         Segitiga segitiga2 = new Segitiga(6, 8, 10);
         segitiga2.print();
     }
